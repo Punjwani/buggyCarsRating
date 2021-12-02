@@ -1,0 +1,1316 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "start_timestamp": "2021-12-02T22:42:58.880Z",
+        "before": [
+          {
+            "result": {
+              "duration": 4212435767,
+              "status": "passed"
+            },
+            "match": {
+              "location": "StepDefinitions.base.openBrowserAndInitializeDriver()"
+            }
+          }
+        ],
+        "line": 17,
+        "name": "To change user\u0027s details and password",
+        "description": "",
+        "id": "edit-user-profile-feature;to-change-user-s-details-and-password;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 74994387,
+              "status": "passed"
+            },
+            "match": {
+              "location": "StepDefinitions.base.closeBrowserAndQuitDriver()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 1959501317,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "user is on main application page",
+            "match": {
+              "location": "StepDefinitions.registerStepDefinition.mainApplicationPage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 98248888,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "user enters buggy1 and Password!23",
+            "match": {
+              "arguments": [
+                {
+                  "val": "buggy1",
+                  "offset": 12
+                },
+                {
+                  "val": "Password!23",
+                  "offset": 23
+                }
+              ],
+              "location": "StepDefinitions.loginStepDefinition.loginCredentials(java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 42661723,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "user clicks on login button",
+            "match": {
+              "location": "StepDefinitions.loginStepDefinition.clickLoginButton()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1210319966,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "user clicks on Profile button",
+            "match": {
+              "location": "StepDefinitions.editProfileStepDefinition.profileButton()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 174477165,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "user edits basic info user and buggy",
+            "match": {
+              "arguments": [
+                {
+                  "val": "user",
+                  "offset": 22
+                },
+                {
+                  "val": "buggy",
+                  "offset": 31
+                }
+              ],
+              "location": "StepDefinitions.editProfileStepDefinition.editBasicInfo(java.lang.String,java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 270438524,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "user edits additional info Male, 20, Queenstown, 9876543210 and Biking",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Male",
+                  "offset": 27
+                },
+                {
+                  "val": "20",
+                  "offset": 33
+                },
+                {
+                  "val": "Queenstown",
+                  "offset": 37
+                },
+                {
+                  "val": "9876543210",
+                  "offset": 49
+                },
+                {
+                  "val": "Biking",
+                  "offset": 64
+                }
+              ],
+              "location": "StepDefinitions.editProfileStepDefinition.editAdditionalInfo(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 152122867,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "user edits password Password!23 and enters new password newPassword!23",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Password!23",
+                  "offset": 20
+                },
+                {
+                  "val": "newPassword!23",
+                  "offset": 56
+                }
+              ],
+              "location": "StepDefinitions.editProfileStepDefinition.editPassword(java.lang.String,java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 28943175,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "user clicks on Save button",
+            "match": {
+              "location": "StepDefinitions.editProfileStepDefinition.saveEditProfileButton()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2637772919,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "the profile details are successfully edited",
+            "match": {
+              "location": "StepDefinitions.editProfileStepDefinition.assertSaveEditProfile()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@RegressionTest"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-12-02T22:43:09.795Z",
+        "before": [
+          {
+            "result": {
+              "duration": 3805407993,
+              "status": "passed"
+            },
+            "match": {
+              "location": "StepDefinitions.base.openBrowserAndInitializeDriver()"
+            }
+          }
+        ],
+        "line": 18,
+        "name": "To change user\u0027s details and password",
+        "description": "",
+        "id": "edit-user-profile-feature;to-change-user-s-details-and-password;;3",
+        "after": [
+          {
+            "result": {
+              "duration": 72602218,
+              "status": "passed"
+            },
+            "match": {
+              "location": "StepDefinitions.base.closeBrowserAndQuitDriver()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 1622205896,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "user is on main application page",
+            "match": {
+              "location": "StepDefinitions.registerStepDefinition.mainApplicationPage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 123520190,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "user enters buggy1 and newPassword!23",
+            "match": {
+              "arguments": [
+                {
+                  "val": "buggy1",
+                  "offset": 12
+                },
+                {
+                  "val": "newPassword!23",
+                  "offset": 23
+                }
+              ],
+              "location": "StepDefinitions.loginStepDefinition.loginCredentials(java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 36795529,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "user clicks on login button",
+            "match": {
+              "location": "StepDefinitions.loginStepDefinition.clickLoginButton()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1760799063,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "user clicks on Profile button",
+            "match": {
+              "location": "StepDefinitions.editProfileStepDefinition.profileButton()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 112255208,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "user edits basic info buggy and user",
+            "match": {
+              "arguments": [
+                {
+                  "val": "buggy",
+                  "offset": 22
+                },
+                {
+                  "val": "user",
+                  "offset": 32
+                }
+              ],
+              "location": "StepDefinitions.editProfileStepDefinition.editBasicInfo(java.lang.String,java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 256848049,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "user edits additional info Female, 24, Dunedin, 9999999999 and Jogging",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Female",
+                  "offset": 27
+                },
+                {
+                  "val": "24",
+                  "offset": 35
+                },
+                {
+                  "val": "Dunedin",
+                  "offset": 39
+                },
+                {
+                  "val": "9999999999",
+                  "offset": 48
+                },
+                {
+                  "val": "Jogging",
+                  "offset": 63
+                }
+              ],
+              "location": "StepDefinitions.editProfileStepDefinition.editAdditionalInfo(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 146267932,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "user edits password newPassword!23 and enters new password Password!23",
+            "match": {
+              "arguments": [
+                {
+                  "val": "newPassword!23",
+                  "offset": 20
+                },
+                {
+                  "val": "Password!23",
+                  "offset": 59
+                }
+              ],
+              "location": "StepDefinitions.editProfileStepDefinition.editPassword(java.lang.String,java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 28505589,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "user clicks on Save button",
+            "match": {
+              "location": "StepDefinitions.editProfileStepDefinition.saveEditProfileButton()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2679271274,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "the profile details are successfully edited",
+            "match": {
+              "location": "StepDefinitions.editProfileStepDefinition.assertSaveEditProfile()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@RegressionTest"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-12-02T22:43:20.450Z",
+        "before": [
+          {
+            "result": {
+              "duration": 3754908846,
+              "status": "passed"
+            },
+            "match": {
+              "location": "StepDefinitions.base.openBrowserAndInitializeDriver()"
+            }
+          }
+        ],
+        "line": 19,
+        "name": "To change user\u0027s details and password",
+        "description": "",
+        "id": "edit-user-profile-feature;to-change-user-s-details-and-password;;4",
+        "after": [
+          {
+            "result": {
+              "duration": 72690674,
+              "status": "passed"
+            },
+            "match": {
+              "location": "StepDefinitions.base.closeBrowserAndQuitDriver()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 1632947588,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "user is on main application page",
+            "match": {
+              "location": "StepDefinitions.registerStepDefinition.mainApplicationPage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 105030091,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "user enters buggy2 and Password!23",
+            "match": {
+              "arguments": [
+                {
+                  "val": "buggy2",
+                  "offset": 12
+                },
+                {
+                  "val": "Password!23",
+                  "offset": 23
+                }
+              ],
+              "location": "StepDefinitions.loginStepDefinition.loginCredentials(java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 34334712,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "user clicks on login button",
+            "match": {
+              "location": "StepDefinitions.loginStepDefinition.clickLoginButton()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1725981971,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "user clicks on Profile button",
+            "match": {
+              "location": "StepDefinitions.editProfileStepDefinition.profileButton()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 106756070,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "user edits basic info buggy and car",
+            "match": {
+              "arguments": [
+                {
+                  "val": "buggy",
+                  "offset": 22
+                },
+                {
+                  "val": "car",
+                  "offset": 32
+                }
+              ],
+              "location": "StepDefinitions.editProfileStepDefinition.editBasicInfo(java.lang.String,java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 250145353,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "user edits additional info Female, 26, Auckland, 0123456789 and Drawing",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Female",
+                  "offset": 27
+                },
+                {
+                  "val": "26",
+                  "offset": 35
+                },
+                {
+                  "val": "Auckland",
+                  "offset": 39
+                },
+                {
+                  "val": "0123456789",
+                  "offset": 49
+                },
+                {
+                  "val": "Drawing",
+                  "offset": 64
+                }
+              ],
+              "location": "StepDefinitions.editProfileStepDefinition.editAdditionalInfo(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 144763200,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "user edits password Password!23 and enters new password newPassword!23",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Password!23",
+                  "offset": 20
+                },
+                {
+                  "val": "newPassword!23",
+                  "offset": 56
+                }
+              ],
+              "location": "StepDefinitions.editProfileStepDefinition.editPassword(java.lang.String,java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 27979186,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "user clicks on Save button",
+            "match": {
+              "location": "StepDefinitions.editProfileStepDefinition.saveEditProfileButton()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2662534318,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "the profile details are successfully edited",
+            "match": {
+              "location": "StepDefinitions.editProfileStepDefinition.assertSaveEditProfile()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@RegressionTest"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-12-02T22:43:30.975Z",
+        "before": [
+          {
+            "result": {
+              "duration": 3792757642,
+              "status": "passed"
+            },
+            "match": {
+              "location": "StepDefinitions.base.openBrowserAndInitializeDriver()"
+            }
+          }
+        ],
+        "line": 20,
+        "name": "To change user\u0027s details and password",
+        "description": "",
+        "id": "edit-user-profile-feature;to-change-user-s-details-and-password;;5",
+        "after": [
+          {
+            "result": {
+              "duration": 71739739,
+              "status": "passed"
+            },
+            "match": {
+              "location": "StepDefinitions.base.closeBrowserAndQuitDriver()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 1615118475,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "user is on main application page",
+            "match": {
+              "location": "StepDefinitions.registerStepDefinition.mainApplicationPage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 149779791,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "user enters buggy2 and newPassword!23",
+            "match": {
+              "arguments": [
+                {
+                  "val": "buggy2",
+                  "offset": 12
+                },
+                {
+                  "val": "newPassword!23",
+                  "offset": 23
+                }
+              ],
+              "location": "StepDefinitions.loginStepDefinition.loginCredentials(java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 34229305,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "user clicks on login button",
+            "match": {
+              "location": "StepDefinitions.loginStepDefinition.clickLoginButton()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1742795214,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "user clicks on Profile button",
+            "match": {
+              "location": "StepDefinitions.editProfileStepDefinition.profileButton()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 112456219,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "user edits basic info car and buggy",
+            "match": {
+              "arguments": [
+                {
+                  "val": "car",
+                  "offset": 22
+                },
+                {
+                  "val": "buggy",
+                  "offset": 30
+                }
+              ],
+              "location": "StepDefinitions.editProfileStepDefinition.editBasicInfo(java.lang.String,java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 248237762,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "user edits additional info Male, 29, Hamilton, 0000000000 and Working",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Male",
+                  "offset": 27
+                },
+                {
+                  "val": "29",
+                  "offset": 33
+                },
+                {
+                  "val": "Hamilton",
+                  "offset": 37
+                },
+                {
+                  "val": "0000000000",
+                  "offset": 47
+                },
+                {
+                  "val": "Working",
+                  "offset": 62
+                }
+              ],
+              "location": "StepDefinitions.editProfileStepDefinition.editAdditionalInfo(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 139434157,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "user edits password newPassword!23 and enters new password Password!23",
+            "match": {
+              "arguments": [
+                {
+                  "val": "newPassword!23",
+                  "offset": 20
+                },
+                {
+                  "val": "Password!23",
+                  "offset": 59
+                }
+              ],
+              "location": "StepDefinitions.editProfileStepDefinition.editPassword(java.lang.String,java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 27823860,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "user clicks on Save button",
+            "match": {
+              "location": "StepDefinitions.editProfileStepDefinition.saveEditProfileButton()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2665433082,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "the profile details are successfully edited",
+            "match": {
+              "location": "StepDefinitions.editProfileStepDefinition.assertSaveEditProfile()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@RegressionTest"
+          }
+        ]
+      }
+    ],
+    "name": "Edit user profile feature",
+    "description": "",
+    "id": "edit-user-profile-feature",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/Features/editProfile.feature",
+    "tags": [
+      {
+        "name": "@RegressionTest",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  },
+  {
+    "line": 2,
+    "elements": [
+      {
+        "start_timestamp": "2021-12-02T22:43:41.581Z",
+        "before": [
+          {
+            "result": {
+              "duration": 3776320214,
+              "status": "passed"
+            },
+            "match": {
+              "location": "StepDefinitions.base.openBrowserAndInitializeDriver()"
+            }
+          }
+        ],
+        "line": 12,
+        "name": "Login should be successful with correct credentials and unsuccessful with incorrect credentials",
+        "description": "",
+        "id": "login-feature;login-should-be-successful-with-correct-credentials-and-unsuccessful-with-incorrect-credentials;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 72244126,
+              "status": "passed"
+            },
+            "match": {
+              "location": "StepDefinitions.base.closeBrowserAndQuitDriver()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 1679371324,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "user is on main application page",
+            "match": {
+              "location": "StepDefinitions.registerStepDefinition.mainApplicationPage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 95910725,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "user enters abc123 and Password!23",
+            "match": {
+              "arguments": [
+                {
+                  "val": "abc123",
+                  "offset": 12
+                },
+                {
+                  "val": "Password!23",
+                  "offset": 23
+                }
+              ],
+              "location": "StepDefinitions.loginStepDefinition.loginCredentials(java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 34137173,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "user clicks on login button",
+            "match": {
+              "location": "StepDefinitions.loginStepDefinition.clickLoginButton()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2664718187,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "user is true logged in",
+            "match": {
+              "arguments": [
+                {
+                  "val": "true",
+                  "offset": 8
+                }
+              ],
+              "location": "StepDefinitions.loginStepDefinition.assertLogin(boolean)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@RegressionTest"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-12-02T22:43:49.911Z",
+        "before": [
+          {
+            "result": {
+              "duration": 356095391,
+              "status": "passed"
+            },
+            "match": {
+              "location": "StepDefinitions.base.openBrowserAndInitializeDriver()"
+            }
+          }
+        ],
+        "line": 13,
+        "name": "Login should be successful with correct credentials and unsuccessful with incorrect credentials",
+        "description": "",
+        "id": "login-feature;login-should-be-successful-with-correct-credentials-and-unsuccessful-with-incorrect-credentials;;3",
+        "after": [
+          {
+            "result": {
+              "duration": 71077133,
+              "status": "passed"
+            },
+            "match": {
+              "location": "StepDefinitions.base.closeBrowserAndQuitDriver()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 1564018830,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "user is on main application page",
+            "match": {
+              "location": "StepDefinitions.registerStepDefinition.mainApplicationPage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 119024561,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "user enters wrongusername and wrongpassword",
+            "match": {
+              "arguments": [
+                {
+                  "val": "wrongusername",
+                  "offset": 12
+                },
+                {
+                  "val": "wrongpassword",
+                  "offset": 30
+                }
+              ],
+              "location": "StepDefinitions.loginStepDefinition.loginCredentials(java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 33904857,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "user clicks on login button",
+            "match": {
+              "location": "StepDefinitions.loginStepDefinition.clickLoginButton()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "error_message": "org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"link text\",\"selector\":\"Logout\"}\n  (Session info: chrome\u003d92.0.4515.159)\nFor documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element\nBuild info: version: \u00274.1.0\u0027, revision: \u002787802e897b\u0027\nSystem info: host: \u0027NZLT2100337\u0027, ip: \u0027127.0.1.1\u0027, os.name: \u0027Linux\u0027, os.arch: \u0027amd64\u0027, os.version: \u00275.11.0-40-generic\u0027, java.version: \u002716.0.2\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCommand: [ae7b85eeec72e1260a1a97fe89fbee59, findElement {using\u003dlink text, value\u003dLogout}]\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 92.0.4515.159, chrome: {chromedriverVersion: 92.0.4515.107 (87a818b10553..., userDataDir: /tmp/.com.google.Chrome.sprbVl}, goog:chromeOptions: {debuggerAddress: localhost:40355}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), se:cdp: ws://localhost:40355/devtoo..., se:cdpVersion: 92.0.4515.159, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: ae7b85eeec72e1260a1a97fe89fbee59\n\tat jdk.internal.reflect.GeneratedConstructorAccessor8.newInstance(Unknown Source)\n\tat java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\n\tat java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)\n\tat java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)\n\tat org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)\n\tat org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)\n\tat org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:164)\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:139)\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:559)\n\tat org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)\n\tat org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:383)\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:375)\n\tat Pages.editProfilePage.logout(editProfilePage.java:87)\n\tat StepDefinitions.loginStepDefinition.assertLogin(loginStepDefinition.java:37)\n\tat ✽.user is false logged in(file:///home/shireen.punjwani/Documents/test/buggyTest/src/test/resources/Features/login.feature:8)\n",
+              "duration": 2587907821,
+              "status": "failed"
+            },
+            "line": 8,
+            "name": "user is false logged in",
+            "match": {
+              "arguments": [
+                {
+                  "val": "false",
+                  "offset": 8
+                }
+              ],
+              "location": "StepDefinitions.loginStepDefinition.assertLogin(boolean)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@RegressionTest"
+          }
+        ]
+      }
+    ],
+    "name": "Login feature",
+    "description": "",
+    "id": "login-feature",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/Features/login.feature",
+    "tags": [
+      {
+        "name": "@RegressionTest",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  },
+  {
+    "line": 2,
+    "elements": [
+      {
+        "start_timestamp": "2021-12-02T22:43:54.653Z",
+        "before": [
+          {
+            "result": {
+              "duration": 312811462,
+              "status": "passed"
+            },
+            "match": {
+              "location": "StepDefinitions.base.openBrowserAndInitializeDriver()"
+            }
+          }
+        ],
+        "line": 4,
+        "name": "Check registration is successful",
+        "description": "",
+        "id": "registration-feature;check-registration-is-successful",
+        "after": [
+          {
+            "result": {
+              "duration": 73165564,
+              "status": "passed"
+            },
+            "match": {
+              "location": "StepDefinitions.base.closeBrowserAndQuitDriver()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 1591828851,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "user is on main application page",
+            "match": {
+              "location": "StepDefinitions.registerStepDefinition.mainApplicationPage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 110127590,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "user clicks on register button",
+            "match": {
+              "location": "StepDefinitions.registerStepDefinition.clickRegisterButton()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 218827438,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "user fills in the registration form",
+            "match": {
+              "location": "StepDefinitions.registerStepDefinition.registrationForm()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 30348988,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "user clicks on submit button",
+            "match": {
+              "location": "StepDefinitions.registerStepDefinition.submitRegisterButton()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 607132974,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "registration is successful",
+            "match": {
+              "location": "StepDefinitions.registerStepDefinition.successfulRegistration()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@RegressionTest"
+          }
+        ]
+      }
+    ],
+    "name": "Registration feature",
+    "description": "",
+    "id": "registration-feature",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/Features/register.feature",
+    "tags": [
+      {
+        "name": "@RegressionTest",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  },
+  {
+    "line": 2,
+    "elements": [
+      {
+        "start_timestamp": "2021-12-02T22:43:57.606Z",
+        "before": [
+          {
+            "result": {
+              "duration": 334247442,
+              "status": "passed"
+            },
+            "match": {
+              "location": "StepDefinitions.base.openBrowserAndInitializeDriver()"
+            }
+          }
+        ],
+        "line": 4,
+        "name": "Voting for best make and best model",
+        "description": "",
+        "id": "voting-feature;voting-for-best-make-and-best-model",
+        "after": [
+          {
+            "result": {
+              "duration": 90476304,
+              "status": "passed"
+            },
+            "match": {
+              "location": "StepDefinitions.base.closeBrowserAndQuitDriver()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 1550131126,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "user is on main application page",
+            "match": {
+              "location": "StepDefinitions.registerStepDefinition.mainApplicationPage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1827664353,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "registers a new user and logs in",
+            "match": {
+              "location": "StepDefinitions.votingStepDefinition.registerNewUserAndLogin()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1194093309,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "user clicks on overall rating",
+            "match": {
+              "location": "StepDefinitions.votingStepDefinition.selectOverallRatingBox()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 5920697141,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "user clicks on following models, write a comment and clicks on vote",
+            "match": {
+              "location": "StepDefinitions.votingStepDefinition.voteForDifferentModels(io.cucumber.datatable.DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "Model",
+                  "Comment"
+                ]
+              },
+              {
+                "cells": [
+                  "Diablo",
+                  "vote for Diable"
+                ]
+              },
+              {
+                "cells": [
+                  "Zonda",
+                  "vote for Zonda"
+                ]
+              }
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "error_message": "org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.className: btn-success (tried for 30 second(s) with 500 milliseconds interval)\nBuild info: version: \u00274.1.0\u0027, revision: \u002787802e897b\u0027\nSystem info: host: \u0027NZLT2100337\u0027, ip: \u0027127.0.1.1\u0027, os.name: \u0027Linux\u0027, os.arch: \u0027amd64\u0027, os.version: \u00275.11.0-40-generic\u0027, java.version: \u002716.0.2\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 92.0.4515.159, chrome: {chromedriverVersion: 92.0.4515.107 (87a818b10553..., userDataDir: /tmp/.com.google.Chrome.7KdQzu}, goog:chromeOptions: {debuggerAddress: localhost:43459}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), se:cdp: ws://localhost:43459/devtoo..., se:cdpVersion: 92.0.4515.159, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: 191ab5bf2af7f619ee4af5170f0d9f9c\n\tat org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:138)\n\tat org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:231)\n\tat StepDefinitions.base.waitUntilVisible(base.java:35)\n\tat Pages.editProfilePage.logout(editProfilePage.java:88)\n\tat StepDefinitions.votingStepDefinition.successfulVoting(votingStepDefinition.java:80)\n\tat ✽.following votes are successfully submitted with these comments(file:///home/shireen.punjwani/Documents/test/buggyTest/src/test/resources/Features/voting.feature:12)\n",
+              "duration": 36214771565,
+              "status": "failed"
+            },
+            "line": 12,
+            "name": "following votes are successfully submitted with these comments",
+            "match": {
+              "location": "StepDefinitions.votingStepDefinition.successfulVoting(io.cucumber.datatable.DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "Model",
+                  "Comment"
+                ]
+              },
+              {
+                "cells": [
+                  "Diablo",
+                  "vote for Diable"
+                ]
+              },
+              {
+                "cells": [
+                  "Zonda",
+                  "vote for Zonda"
+                ]
+              }
+            ],
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@RegressionTest"
+          }
+        ]
+      }
+    ],
+    "name": "Voting feature",
+    "description": "",
+    "id": "voting-feature",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/Features/voting.feature",
+    "tags": [
+      {
+        "name": "@RegressionTest",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  }
+]

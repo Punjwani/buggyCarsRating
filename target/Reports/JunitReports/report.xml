@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="2" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="8" time="105.994">
+    <testcase classname="Edit user profile feature" name="To change user's details and password" time="10.901">
+        <system-out><![CDATA[Given user is on main application page......................................passed
+When user enters buggy1 and Password!23.....................................passed
+And user clicks on login button.............................................passed
+And user clicks on Profile button...........................................passed
+And user edits basic info user and buggy....................................passed
+And user edits additional info Male, 20, Queenstown, 9876543210 and Biking..passed
+And user edits password Password!23 and enters new password newPassword!23..passed
+And user clicks on Save button..............................................passed
+Then the profile details are successfully edited............................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Edit user profile feature" name="To change user's details and password 2" time="10.65">
+        <system-out><![CDATA[Given user is on main application page......................................passed
+When user enters buggy1 and newPassword!23..................................passed
+And user clicks on login button.............................................passed
+And user clicks on Profile button...........................................passed
+And user edits basic info buggy and user....................................passed
+And user edits additional info Female, 24, Dunedin, 9999999999 and Jogging..passed
+And user edits password newPassword!23 and enters new password Password!23..passed
+And user clicks on Save button..............................................passed
+Then the profile details are successfully edited............................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Edit user profile feature" name="To change user's details and password 3" time="10.521">
+        <system-out><![CDATA[Given user is on main application page......................................passed
+When user enters buggy2 and Password!23.....................................passed
+And user clicks on login button.............................................passed
+And user clicks on Profile button...........................................passed
+And user edits basic info buggy and car.....................................passed
+And user edits additional info Female, 26, Auckland, 0123456789 and Drawing.passed
+And user edits password Password!23 and enters new password newPassword!23..passed
+And user clicks on Save button..............................................passed
+Then the profile details are successfully edited............................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Edit user profile feature" name="To change user's details and password 4" time="10.603">
+        <system-out><![CDATA[Given user is on main application page......................................passed
+When user enters buggy2 and newPassword!23..................................passed
+And user clicks on login button.............................................passed
+And user clicks on Profile button...........................................passed
+And user edits basic info car and buggy.....................................passed
+And user edits additional info Male, 29, Hamilton, 0000000000 and Working...passed
+And user edits password newPassword!23 and enters new password Password!23..passed
+And user clicks on Save button..............................................passed
+Then the profile details are successfully edited............................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Login feature" name="Login should be successful with correct credentials and unsuccessful with incorrect credentials" time="8.325">
+        <system-out><![CDATA[Given user is on main application page......................................passed
+When user enters abc123 and Password!23.....................................passed
+And user clicks on login button.............................................passed
+Then user is true logged in.................................................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Login feature" name="Login should be successful with correct credentials and unsuccessful with incorrect credentials 2" time="4.736">
+        <failure message="no such element: Unable to locate element: {&quot;method&quot;:&quot;link text&quot;,&quot;selector&quot;:&quot;Logout&quot;}&#10;  (Session info: chrome=92.0.4515.159)&#10;For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element&#10;Build info: version: '4.1.0', revision: '87802e897b'&#10;System info: host: 'NZLT2100337', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '5.11.0-40-generic', java.version: '16.0.2'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [ae7b85eeec72e1260a1a97fe89fbee59, findElement {using=link text, value=Logout}]&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 92.0.4515.159, chrome: {chromedriverVersion: 92.0.4515.107 (87a818b10553..., userDataDir: /tmp/.com.google.Chrome.sprbVl}, goog:chromeOptions: {debuggerAddress: localhost:40355}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), se:cdp: ws://localhost:40355/devtoo..., se:cdpVersion: 92.0.4515.159, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: ae7b85eeec72e1260a1a97fe89fbee59" type="org.openqa.selenium.NoSuchElementException"><![CDATA[Given user is on main application page......................................passed
+When user enters wrongusername and wrongpassword............................passed
+And user clicks on login button.............................................passed
+Then user is false logged in................................................failed
+
+StackTrace:
+org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"link text","selector":"Logout"}
+  (Session info: chrome=92.0.4515.159)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.1.0', revision: '87802e897b'
+System info: host: 'NZLT2100337', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '5.11.0-40-generic', java.version: '16.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [ae7b85eeec72e1260a1a97fe89fbee59, findElement {using=link text, value=Logout}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 92.0.4515.159, chrome: {chromedriverVersion: 92.0.4515.107 (87a818b10553..., userDataDir: /tmp/.com.google.Chrome.sprbVl}, goog:chromeOptions: {debuggerAddress: localhost:40355}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), se:cdp: ws://localhost:40355/devtoo..., se:cdpVersion: 92.0.4515.159, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: ae7b85eeec72e1260a1a97fe89fbee59
+	at jdk.internal.reflect.GeneratedConstructorAccessor8.newInstance(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:164)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:139)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:559)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:383)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:375)
+	at Pages.editProfilePage.logout(editProfilePage.java:87)
+	at StepDefinitions.loginStepDefinition.assertLogin(loginStepDefinition.java:37)
+	at ✽.user is false logged in(file:///home/shireen.punjwani/Documents/test/buggyTest/src/test/resources/Features/login.feature:8)
+]]></failure>
+    </testcase>
+    <testcase classname="Registration feature" name="Check registration is successful" time="2.947">
+        <system-out><![CDATA[Given user is on main application page......................................passed
+When user clicks on register button.........................................passed
+And user fills in the registration form.....................................passed
+And user clicks on submit button............................................passed
+Then registration is successful.............................................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Voting feature" name="Voting for best make and best model" time="47.138">
+        <failure message="Expected condition failed: waiting for visibility of element located by By.className: btn-success (tried for 30 second(s) with 500 milliseconds interval)&#10;Build info: version: '4.1.0', revision: '87802e897b'&#10;System info: host: 'NZLT2100337', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '5.11.0-40-generic', java.version: '16.0.2'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 92.0.4515.159, chrome: {chromedriverVersion: 92.0.4515.107 (87a818b10553..., userDataDir: /tmp/.com.google.Chrome.7KdQzu}, goog:chromeOptions: {debuggerAddress: localhost:43459}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), se:cdp: ws://localhost:43459/devtoo..., se:cdpVersion: 92.0.4515.159, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 191ab5bf2af7f619ee4af5170f0d9f9c" type="org.openqa.selenium.TimeoutException"><![CDATA[Given user is on main application page......................................passed
+And registers a new user and logs in........................................passed
+When user clicks on overall rating..........................................passed
+And user clicks on following models, write a comment and clicks on vote.....passed
+Then following votes are successfully submitted with these comments.........failed
+
+StackTrace:
+org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.className: btn-success (tried for 30 second(s) with 500 milliseconds interval)
+Build info: version: '4.1.0', revision: '87802e897b'
+System info: host: 'NZLT2100337', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '5.11.0-40-generic', java.version: '16.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 92.0.4515.159, chrome: {chromedriverVersion: 92.0.4515.107 (87a818b10553..., userDataDir: /tmp/.com.google.Chrome.7KdQzu}, goog:chromeOptions: {debuggerAddress: localhost:43459}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), se:cdp: ws://localhost:43459/devtoo..., se:cdpVersion: 92.0.4515.159, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 191ab5bf2af7f619ee4af5170f0d9f9c
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:138)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:231)
+	at StepDefinitions.base.waitUntilVisible(base.java:35)
+	at Pages.editProfilePage.logout(editProfilePage.java:88)
+	at StepDefinitions.votingStepDefinition.successfulVoting(votingStepDefinition.java:80)
+	at ✽.following votes are successfully submitted with these comments(file:///home/shireen.punjwani/Documents/test/buggyTest/src/test/resources/Features/voting.feature:12)
+]]></failure>
+    </testcase>
+</testsuite>
