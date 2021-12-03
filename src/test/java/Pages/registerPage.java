@@ -36,7 +36,7 @@ public class registerPage {
     }
 
     public void registerANewUSer(String randomLoginString, String randomFirstnameString, String randomLastnameString, String password) {
-        //fill in the registration form details
+        //fill in the registration form details with the random strings being passed
         driver.findElement(new_username).sendKeys(randomLoginString);
         driver.findElement(new_firstname).sendKeys(randomFirstnameString);
         driver.findElement(new_lastname).sendKeys(randomLastnameString);

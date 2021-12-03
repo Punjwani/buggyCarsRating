@@ -37,6 +37,7 @@ public class loginPage {
         //wait until logout button is visible
         base.waitUntilVisible(logout_button);
 
+        //assert that the following text is present on the top right header
         Assert.assertTrue(driver.findElement(is_logged_in).getText().contains("Hi"));
         Assert.assertTrue(driver.findElement(is_logged_in).getText().contains("Profile"));
         Assert.assertTrue(driver.findElement(is_logged_in).getText().contains("Logout"));

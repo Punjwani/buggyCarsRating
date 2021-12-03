@@ -34,6 +34,7 @@ public class loginStepDefinition {
             login.isNotLoggedIn();
         }
 
+        //logout of the application
         profile.logout();
     }
 

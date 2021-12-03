@@ -26,6 +26,7 @@ public class votingPage {
         driver.findElement(select_overall_rating).click();
         //new url should be "https://buggy.justtestit.org/overall"
         driver.getCurrentUrl().contains("overall");
+        //wait until page loaded
         base.waitUntilVisible(view_more_button);
     }
 

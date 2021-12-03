@@ -11,21 +11,25 @@ public class editProfileStepDefinition {
 
     @And("^user clicks on Profile button$")
     public void profileButton() throws InterruptedException {
+        //navigate to profile page
         profile.goToProfile();
     }
 
     @And("^user edits basic info (.*) and (.*)$")
     public void editBasicInfo(String firstname, String lastname) throws InterruptedException {
+        //edit basic information
         profile.editBasicInfo(firstname, lastname);
     }
 
     @And("^user edits additional info (.*), (.*), (.*), (.*) and (.*)$")
     public void editAdditionalInfo(String gender, String age, String address, String phone, String hobby) throws InterruptedException {
+        //edit advanced information
         profile.editAdditionalInfo(gender, age, address, phone, hobby);
     }
 
     @And("^user edits password (.*) and enters new password (.*)$")
     public void editPassword(String oldPassword, String newPassword) {
+        //edit password information
         profile.editPassword(oldPassword, newPassword);
     }
 

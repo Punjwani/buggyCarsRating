@@ -9,11 +9,12 @@ import org.junit.runner.RunWith;
         features="src/test/resources/Features",
         glue={"StepDefinitions"},
         monochrome = true,
-        plugin = {
+        plugin =
+                {
                 "pretty", "html:target/Reports/HtmlReports/report.html",
                 "pretty", "json:target/Reports/JsonReports/report.json",
                 "pretty", "junit:target/Reports/JunitReports/report.xml"
-        },
+                },
         tags = "@RegressionTest"
 )
 public class testRunner {

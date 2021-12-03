@@ -37,6 +37,7 @@ public class base {
 
     @After
     public void closeBrowserAndQuitDriver() {
+        //close browser and quit driver
         driver.close();
         driver.quit();
     }

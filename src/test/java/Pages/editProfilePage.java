@@ -46,7 +46,7 @@ public class editProfilePage {
     }
 
     public void editAdditionalInfo(String gender, String age, String address, String phone, String hobby) throws InterruptedException {
-
+//        access datalist in a list
 //        driver.findElement(By.id("gender")).click();
 //        List<WebElement> gendersList = driver.findElement(By.id("genders")).findElements(By.tagName("option"));
 //        for (int i=0; i<gendersList.size(); i++) {
@@ -56,6 +56,7 @@ public class editProfilePage {
 //                }
 //        }
 
+        //removes the existing text through ctrl+a
         driver.findElement(edit_gender).sendKeys(Keys.chord(Keys.CONTROL, "a"), gender);
         driver.findElement(edit_age).sendKeys(Keys.chord(Keys.CONTROL, "a"), age);
         driver.findElement(edit_address).sendKeys(Keys.chord(Keys.CONTROL, "a"), address);

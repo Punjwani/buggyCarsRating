@@ -35,6 +35,7 @@ public class registerStepDefinition {
         randomLastnameString = Common.sharedFunctions.createRandomString(10);
         password = "Password!23";
 
+        //send the randomly generated strings to register function
         register.registerANewUSer(randomLoginString, randomFirstnameString, randomLastnameString, password);
     }
 
@@ -45,6 +46,7 @@ public class registerStepDefinition {
 
     @Then("^registration is successful$")
     public void successfulRegistration() throws InterruptedException {
+        //assert registration
         register.isRegistered();
     }
 
